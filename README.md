@@ -6,9 +6,13 @@ The company Bikes Ltd is launching a new product: BikeX. Your job is to make the
 Create a single web page promoting the product described in the brief. You can use parts of the text below as you like, but preferably don't just copy and paste. Also, we require you to use JavaScript in some way on your site. The following aspects will be evaluated:
 
 -Code quality
+
 -Graphic design
+
 -Responsive design
+
 -Attention to detail
+
 -Fresh ideas
 
 
