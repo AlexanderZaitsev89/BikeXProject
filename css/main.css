@@ -1,0 +1,248 @@
+html,
+body {
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+}
+h1{
+    color:rgba(41,127,255,70);
+}
+p {
+    text-indent: 25px;
+}
+section{
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    width: 100vw;
+    height: 100vh;
+}
+li{
+    margin-left: 5px;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.customMarginBottom{
+    margin-bottom: 8vh;
+}
+/*-----------------------------------------------------page1 settings-------------------------------------------------*/
+#page1{
+    background-color: rgba(41,127,255,70);
+    background-image: url("../img/goppelbike.svg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#menuImg{
+    width: 5vh;
+    height: 5vh;
+}
+#customNavBtn{
+    z-index:1;
+    position: fixed;
+    right: 1%;
+    top:   1%;
+}
+.arrowDown{
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 34px;
+    line-height: 1.33;
+    border-radius: 25px;
+    background-color: rgba(41,127,255,70);
+    position: absolute;
+    right:    50%;
+    bottom:   5%;
+    transform: translate(50%,0);
+}
+
+
+/*-----------------------------------------------------page2 settings-------------------------------------------------*/
+#page2{
+    background-image: url("../img/old-bike.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    padding-top: 15vh;
+}
+#headerPage2{
+    font-size: 80px;
+    padding: 0 0 0 0;
+}
+.customAnimation{
+    opacity: 0;
+    transform:translateX(-150px) ;
+    transition:all 1s ease-out;
+}
+.customAnimation.fade-in{
+    opacity: 1;
+    transform:translateY(0) ;
+    transition:all 1s ease-out;
+}
+
+/*-----------------------------------------------------page3 settings-------------------------------------------------*/
+#page3{
+    padding-top: 15vh;
+}
+
+.paragrapsPage3{
+    margin:5% 10% 20% 5%  ;
+}
+.customAnimation2{
+    opacity: 0;
+    transform:translateY(150px) ;
+    transition:all 1s ease-out;
+}
+.customAnimation2.fade-in2{
+    opacity: 1;
+    transform:translateY(0) ;
+    transition:all 2s ease-out;
+}
+/*-----------------------------------------------------page4 settings-------------------------------------------------*/
+#specs{
+    background-image: url("../img/bikexlogo.svg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#page4{
+    padding-top: 15vh;
+}
+
+/*-----------------------------------------------------page5 settings-------------------------------------------------*/
+#page5{
+    padding-top: 10vh;
+}
+#textPrice{
+    color:rgba(41,127,255,70);
+}
+
+.customButton{
+    width:5vh;
+    height: 5vh;
+}
+.marginsForButtons{
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+#inputName,#btnConfirm,#helpMsg{
+    display: none;
+}
+/*-----------------------------------------------------page6 settings-------------------------------------------------*/
+#page6{
+    background: dodgerblue;
+    padding-top: 8vh;
+}
+
+
+/*-----------------------------------------------------Media queries--------------------------------------------------*/
+
+
+@media screen and (max-width: 800px) {
+    section {
+        padding-top: 2vh;
+    }
+    h1{
+        font-size: 18px;
+    }
+    body {
+        font-size: 13px;
+    }
+    #page6{
+        padding-top: 5vh;
+    }
+    #streetview{
+        display: none;
+    }
+    #headerPage2{
+        margin-bottom: 15vh;
+        font-size: 40px;
+    }
+    .paragrapsPage3{
+        margin:5% 10% 20% 5%  ;/*top right bottom left*/
+    }
+    .imgPage4{
+        width:300px;
+        height: 300px;
+    }
+    #page5{
+        padding-top: 1vh;
+    }
+    .imgPage5{
+        width:400px;
+        height: 300px;
+    }
+
+
+
+}
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 15px;
+    }
+    body {
+        font-size: 11px;
+    }
+    .imgPage4{
+        width:200px;
+        height: 200px;
+    }
+    .imgPage5{
+        width:250px;
+        height: 200px;
+    }
+    .paragrapsPage3{
+        margin:5% 10% 10% 10%  ;/*top right bottom left*/
+    }
+    #headerPage2 {
+        margin-bottom: 15vh;
+        font-size: 40px;
+    }
+    #specs{
+        background-position: center;
+    }
+
+}
+
+
+/*-----------------------------------------------------Animations-----------------------------------------------------*/
+
+/*Use this class when you want your content to be hidden*/
+.BeforeScroll
+{
+display: none;
+}
+
+/*Use this class when you want your content to be shown after some scroll*/
+.AfterScroll
+{
+display: block;
+}
+
+
+/* PULSE */
+@keyframes pulse {
+    0% {transform: scale(1.1)}
+    50% {transform: scale(0.8)}
+    100% {transform: scale(1.1)}
+}
+.faa-pulse.animated,
+.faa-pulse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-pulse {
+    animation: pulse 2s linear infinite;
+}
+.faa-pulse.animated.faa-fast,
+.faa-pulse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-pulse.faa-fast {
+    animation: pulse 1s linear infinite;
+}
+.faa-pulse.animated.faa-slow,
+.faa-pulse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-pulse.faa-slow {
+    animation: pulse 3s linear infinite;
+}
+
